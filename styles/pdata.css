@@ -1,0 +1,20 @@
+ul li {
+  line-height: 2.8rem;
+}
+
+.section__pdata {
+  margin-top: 5rem;
+}
+.section__pdata-text h1 {
+  font-size: 23px;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+.section__pdata-text h2 {
+  margin: 2rem 0 1rem 0;
+  font-weight: bold;
+}
+.section__pdata-text p {
+  margin-top: 2rem;
+  line-height: 2.8rem;
+}/*# sourceMappingURL=pdata.css.map */

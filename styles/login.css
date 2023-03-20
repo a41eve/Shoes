@@ -1,0 +1,135 @@
+@charset "UTF-8";
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid green;
+  -webkit-text-fill-color: #fff;
+  background-color: transparent;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.register p {
+  max-width: 100%;
+  padding: 1rem 2rem;
+  background-color: green;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+
+/*block login&registration*/
+.block-autorization {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: -5rem;
+  border-radius: 5rem 5rem 0rem 0rem;
+  height: 75rem;
+  background-color: #100A30;
+  box-shadow: 0 0 10px black;
+}
+.block-autorization__form {
+  display: flex;
+  flex-direction: column;
+  /* Это стили для кастомных сообщений об ошибке */
+}
+.block-autorization__form__title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #fff;
+}
+.block-autorization__form__span {
+  position: absolute;
+  top: 2.3rem;
+  right: 2rem;
+}
+.block-autorization__form__span ion-icon {
+  font-size: 2rem;
+  color: #fff;
+}
+.block-autorization__form__input {
+  position: relative;
+  z-index: 1;
+  widtH: 30rem;
+  outline: none;
+  border: 0;
+  padding: 1.3rem 0rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.2s;
+}
+.block-autorization__form__input:focus {
+  background-color: #100A30;
+}
+.block-autorization__form__input:focus ~ label, .block-autorization__form__input:valid ~ label {
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  left: 1rem;
+  bottom: 5.2rem;
+  color: #fff;
+  font-size: 13px;
+}
+.block-autorization__form .error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+.block-autorization__form .error.active {
+  padding: 0.3em;
+}
+.block-autorization__form label {
+  font-size: 15px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  left: 1rem;
+  bottom: 2.3rem;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.block-autorization__form__btn {
+  outline: none;
+  border: 0;
+  background-color: #624DE3;
+  padding: 1rem 5rem;
+  border-radius: 0.7rem;
+  margin: 1rem;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.block-autorization__form__btn:hover {
+  box-shadow: 0 0 7px #624DE3;
+}
+.block-autorization__form #pass22 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 14px;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+
+.center-line {
+  position: absolute;
+  border: 5px solid #fff;
+  box-shadow: 0 0 100px #fff;
+  height: 75rem;
+}/*# sourceMappingURL=login.css.map */

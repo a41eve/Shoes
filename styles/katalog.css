@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/*хлебные крошки*/
+.breadcrumb {
+  display: flex;
+  margin-top: 3rem;
+}
+.breadcrumb-item a {
+  color: #100A30;
+}
+.breadcrumb-item a:hover {
+  color: #624DE3;
+}
+
+/*tovar*/
+.section__katalog {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+@media (max-width: 465px) {
+  .section__katalog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -7rem;
+  }
+}
+.section__katalog-title {
+  padding-right: 2rem;
+}
+.section__katalog-button {
+  color: #100A30;
+  border: 1px solid #100A30;
+  padding: 1rem 3rem;
+}
+.section__katalog-button:hover {
+  color: #100A30;
+}
+
+.block-katalog {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+
+/*transform-img*/
+.scale {
+  overflow: hidden;
+  align-items: center;
+}
+.scale-price-cart {
+  display: flex;
+}
+.scale-price-cart p {
+  margin-top: 0.5rem;
+}
+.scale-price-cart-add-to-cart {
+  margin-left: 15rem;
+}
+.scale-price-cart-add-to-cart img {
+  width: 3rem;
+}
+
+.scale img {
+  transition: transform 0.25s;
+}
+
+.scale img:hover {
+  transform: scale(1.05);
+}
+
+.katalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*filter-katalog*/
+}
+@media (max-width: 400px) {
+  .katalog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+}
+.katalog-item {
+  max-width: 280px;
+  height: 420px;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 4rem;
+}
+.katalog-item:hover {
+  border: 0px solid #100A30;
+}
+.katalog__img {
+  width: 280px;
+}
+.katalog__text {
+  max-width: 280px;
+  padding: 1rem 1rem;
+  line-height: 2.2rem;
+  margin-bottom: 0rem;
+  color: #100A30;
+}
+.katalog__price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 0rem 1rem;
+  color: #100A30;
+}
+.katalog-filter {
+  width: 95rem;
+  height: 55rem;
+  margin-right: 5rem;
+}
+
+/*image__add-to-cart*/
+.scale-price-cart-add-to-cart {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+}
+.scale-price-cart-add-to-cart ion-icon {
+  font-size: 30px;
+  color: #624DE3;
+}
+.scale-price-cart-add-to-cart #heart {
+  display: none;
+}
+
+/*filter-katalog*/
+.katalog-filter {
+  max-width: 27rem;
+  min-height: 100rem;
+  border-right: 1px solid #c7ccd1;
+  padding: 1rem 2rem 1rem 0;
+  /*filter-color*/
+  /*filter-link*/
+  /*filter-price*/
+  /*filter-size*/
+}
+.katalog-filter__text {
+  margin: 2rem 0rem;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid silver;
+}
+.katalog-filter__color {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.katalog-filter__color-color-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.katalog-filter__color-color-checkbox + label {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem 0.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.katalog-filter__color-color-checkbox:checked + label {
+  background-image: url(../images/private/galochka.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+}
+.katalog-filter__link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.katalog-filter__link-link-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.katalog-filter__link-link-checkbox + label {
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  transition: 0.2s;
+}
+.katalog-filter__link-link-checkbox:checked + label {
+  letter-spacing: 2px;
+  color: #624DE3;
+}
+.katalog-filter input::-webkit-outer-spin-button,
+.katalog-filter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.katalog-filter .filters-price__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.katalog-filter .filters-price__label {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.katalog-filter .filters-price__text {
+  font-size: 14px;
+  color: #808080;
+}
+.katalog-filter .filters-price__input {
+  width: 70px;
+  border: none;
+  color: #4D4D4D;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.katalog-filter .filters-price__slider {
+  top: 1rem;
+  margin-bottom: 3rem;
+}
+.katalog-filter .noUi-connect {
+  background-color: #624DE3;
+}
+.katalog-filter .noUi-target {
+  background-color: #bfbfbf;
+  border: none;
+  border-radius: 100px;
+  box-shadow: none;
+  height: 2px;
+}
+.katalog-filter .noUi-handle::after,
+.katalog-filter .noUi-handle::before {
+  display: none;
+}
+.katalog-filter .noUi-handle {
+  box-shadow: none;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 3px solid #624DE3;
+}
+.katalog-filter .noUi-horizontal .noUi-handle {
+  width: 22px;
+  height: 22px;
+  top: -10px;
+}
+.katalog-filter .noUi-horizontal .noUi-handle-upper {
+  right: 0;
+}
+.katalog-filter__size {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.katalog-filter__size-size-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.katalog-filter__size-size-checkbox + label {
+  text-align: center;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem 0.5rem;
+  font-size: 1.4rem;
+  padding-top: 0.4rem;
+  background-color: #100A30;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.katalog-filter__size-size-checkbox:checked + label {
+  transform: scale(1.1);
+  background-color: #1e1359;
+}
+.katalog-filter-btn {
+  margin-bottom: 3rem;
+}
+.katalog-filter-btn-open {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: #624DE3;
+  outline: none;
+  border: 1px solid #624DE3;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 0;
+  border-radius: 0.6rem;
+  transition: 0.2s ease-in-out;
+}
+.katalog-filter-btn-open:hover {
+  color: #fff;
+  box-shadow: 0 0 12px #624DE3;
+}
+
+/*присваивание цветов в фильтре*/
+.checkbox--red + label {
+  background-color: red;
+}
+
+.checkbox--blue + label {
+  background-color: blue;
+}
+
+.checkbox--blue-light + label {
+  background-color: #3b6fff;
+}
+
+.checkbox--green + label {
+  background-color: #004202;
+}
+
+.checkbox--green-light + label {
+  background-color: #6bff6e;
+}
+
+.checkbox--cyan + label {
+  background-color: cyan;
+}
+
+.checkbox--orange + label {
+  background-color: #fd7e14;
+}
+
+.checkbox--purple + label {
+  background-color: #4c0082;
+}
+
+.checkbox--pink + label {
+  background-color: #ff00d4;
+}
+
+.checkbox--brown + label {
+  background-color: #804030;
+}
+
+.checkbox--yellow + label {
+  background-color: yellow;
+}
+
+.checkbox--grey + label {
+  background-color: grey;
+}
+
+.checkbox--black + label {
+  background-color: black;
+}
+
+.checkbox--krem + label {
+  background-color: #ffc496;
+}
+
+.checkbox--white + label {
+  background-color: #fff;
+  border: 1px solid #000;
+}/*# sourceMappingURL=katalog.css.map */

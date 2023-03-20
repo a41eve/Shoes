@@ -1,0 +1,178 @@
+.section_card {
+  margin-top: 6rem;
+}
+.section_card-item {
+  display: flex;
+  flex-wrap: wrap;
+  /*img right side - content*/
+}
+.section_card-item-img img {
+  width: 60rem;
+  height: 65rem;
+}
+.section_card-item-content {
+  max-width: 55rem;
+  margin-left: 5rem;
+  align-items: center;
+  /*article*/
+  /*price*/
+  /*available*/
+  /*btn link to basket*/
+  /*characteristic*/
+}
+.section_card-item-content-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 3rem;
+}
+.section_card-item-content span {
+  color: #777;
+  font-size: 15px;
+}
+.section_card-item-content-price {
+  display: flex;
+}
+.section_card-item-content-price h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.section_card-item-content-price h2 {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 2.4rem;
+  margin-left: 1rem;
+}
+.section_card-item-content-count-input {
+  margin-top: 2rem;
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3e3e3;
+  padding: 0.3rem 0.7rem 0 0.7rem;
+  border-radius: 1rem;
+}
+.section_card-item-content-count-input label {
+  margin-top: 0.5rem;
+}
+.section_card-item-content-count-input label ion-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+}
+.section_card-item-content-count-input input[type=button] {
+  display: none;
+}
+.section_card-item-content-count-input input::-webkit-outer-spin-button,
+.section_card-item-content-count-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.section_card-item-content-count-input input[type=number] {
+  border: none;
+  outline: none;
+  width: 3rem;
+  font-size: 18px;
+  background-color: #e3e3e3;
+  text-align: center;
+}
+.section_card-item-content-available {
+  display: flex;
+}
+.section_card-item-content-available ion-icon {
+  font-size: 25px;
+}
+.section_card-item-content-available span {
+  font-size: 16px;
+  color: #000;
+  margin-left: 0.7rem;
+}
+.section_card-item-content-size {
+  margin-top: 2rem;
+}
+.section_card-item-content-size input:required {
+  margin-left: 1.5rem;
+  margin-top: 2.5rem;
+  background-color: black;
+}
+.section_card-item-content-size input:required,
+.section_card-item-content-size textarea:required {
+  background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+}
+.section_card-item-content-btn {
+  margin-top: 2rem;
+}
+.section_card-item-content-btn a button {
+  background-color: #624DE3;
+  border: 2px solid #624DE3;
+  outline: none;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.section_card-item-content-btn a button:hover {
+  color: #fff;
+  box-shadow: 0 0 10px #624DE3;
+  border: 2px solid #624DE3;
+}
+.section_card-item-content-btn #btn-now {
+  background-color: transparent;
+  border: 2px solid #624DE3;
+  outline: none;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  color: #624DE3;
+  transition: 0.2s ease-in-out;
+}
+.section_card-item-content-btn #btn-now:hover {
+  color: #fff;
+  background-color: #624DE3;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px #624DE3;
+}
+.section_card-item-content-characteristic {
+  margin-top: 4rem;
+}
+.section_card-item-content-characteristic-title {
+  font-weight: bold;
+}
+.section_card-item-content-characteristic-block__text {
+  color: #333;
+}
+.section_card-item-content-characteristic-block__text-color span {
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50%;
+}
+
+/*block size*/
+.katalog-filter__size {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.katalog-filter__size-size-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.katalog-filter__size-size-checkbox + label {
+  text-align: center;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem 0.5rem;
+  font-size: 1.4rem;
+  padding-top: 0.4rem;
+  background-color: #100A30;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.katalog-filter__size-size-checkbox:checked + label {
+  transform: scale(1.1);
+  background-color: #1e1359;
+}/*# sourceMappingURL=card.css.map */

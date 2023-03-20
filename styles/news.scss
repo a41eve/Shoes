@@ -1,0 +1,381 @@
+@import 'variables';
+@import 'breakpoints';
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    border: none;
+}
+
+::-webkit-scrollbar-track {
+    background: $white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $purple;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: $dark;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+/*хлебные крошки*/
+.breadcrumb {
+    display: flex;
+    margin-top: 3rem;
+
+    &-item a {
+        color: $dark;
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}
+
+/*NEWS*/
+.section__news {
+    margin-top: 5rem;
+
+    @include breakpoint (xxs) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -7rem;
+    }
+
+    &-filter {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 4rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #c7ccd1;
+
+        p {
+            margin-top: 0.6rem;
+        }
+
+        /*filter*/
+        select {
+            cursor: pointer;
+            width: 20rem;
+            padding: 0.6rem 2rem;
+            border: none;
+            outline: none;
+            background-color: $purple;
+            border-radius: 2rem;
+            color: #fff;
+            transition: .1s ease-in-out;
+
+            &:focus {
+                border-radius: 0rem;
+            }
+        }
+    }
+
+    &-title {
+        padding-right: 2rem;
+    }
+
+    &-button {
+        color: $dark;
+        border: 1px solid $dark;
+        padding: 1rem 3rem;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+}
+
+/*news-content*/
+.news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+
+    @include breakpoint (xxxxs) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+    }
+
+    &-item {
+        max-width: 37rem;
+        height: 70rem;
+        transition: .2s;
+
+        &:hover {
+            border: 0px solid $dark;
+        }
+
+        @include breakpoint (xxl) {}
+
+        @include breakpoint (xl) {}
+
+        @include breakpoint (xll) {
+            max-width: 400px;
+            height: 540px;
+            transition: .2s;
+        }
+
+        @include breakpoint (lg) {}
+
+        @include breakpoint (lg-min) {
+            max-width: 400px;
+            height: 650px;
+            transition: .2s;
+        }
+
+        @include breakpoint (md-max) {
+            max-width: 350px;
+            height: 600px;
+            transition: .2s;
+        }
+
+        @include breakpoint (md) {
+            max-width: 320px;
+            height: 550px;
+            transition: .2s;
+        }
+
+        @include breakpoint (md_sp1) {
+            max-width: 290px;
+            height: 530px;
+            transition: .2s;
+        }
+
+        @include breakpoint (sm) {
+            max-width: 260px;
+            height: 490px;
+            transition: .2s;
+        }
+
+        @include breakpoint (xs) {
+            max-width: 240px;
+            height: 470px;
+            transition: .2s;
+        }
+
+        @include breakpoint (xss) {
+            max-width: 210px;
+            height: 450px;
+            transition: .2s;
+        }
+
+        @include breakpoint (xxs) {
+            max-width: 200px;
+            height: 430px;
+            transition: .2s;
+        }
+
+        @include breakpoint (xxxs) {
+            max-width: 180px;
+            height: 430px;
+            transition: .2s;
+        }
+
+        @include breakpoint (xxxxs) {
+            max-width: 300px;
+            height: 530px;
+            transition: .2s;
+        }
+
+        &-header {
+
+            &-info {
+                position: relative;
+                height: 65rem;
+
+                &-text {
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                &-img {
+
+                    img {
+                        border-radius: 3rem;
+                        width: 37rem;
+                        height: 50rem;
+                        margin-bottom: 2rem;
+                        transition: .2s ease-in-out;
+
+                        @include breakpoint (xxl) {}
+
+                        @include breakpoint (xl) {}
+
+                        @include breakpoint (xll) {}
+
+                        @include breakpoint (lg) {}
+
+                        @include breakpoint (lg-min) {
+                            width: 400px;
+                        }
+
+                        @include breakpoint (md-max) {
+                            width: 350px;
+                        }
+
+                        @include breakpoint (md) {
+                            width: 320px;
+                        }
+
+                        @include breakpoint (md_sp1) {
+                            width: 290px;
+                        }
+
+                        @include breakpoint (sm) {
+                            width: 260px;
+                        }
+
+                        @include breakpoint (xs) {
+                            width: 240px;
+                        }
+
+                        @include breakpoint (xss) {
+                            width: 210px;
+                        }
+
+                        @include breakpoint (xxs) {
+                            width: 200px;
+                        }
+
+                        @include breakpoint (xxxs) {
+                            width: 180px;
+                        }
+
+                        @include breakpoint (xxxxs) {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 2.2rem;
+    }
+
+    p:last-child {
+        font-size: 15px;
+        color: #444;
+    }
+
+    &__text {
+        color: $dark;
+
+        @include breakpoint (xxl) {}
+
+        @include breakpoint (xl) {}
+
+        @include breakpoint (xll) {}
+
+        @include breakpoint (lg) {}
+
+        @include breakpoint (lg-min) {
+            max-width: 400px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (md-max) {
+            max-width: 350px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (md) {
+            max-width: 320px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (md_sp1) {
+            max-width: 290px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (sm) {
+            max-width: 260px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (xs) {
+            max-width: 240px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (xss) {
+            max-width: 210px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (xxs) {
+            max-width: 200px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (xxxs) {
+            max-width: 180px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+
+        @include breakpoint (xxxxs) {
+            max-width: 300px;
+            padding: 1rem 0rem;
+            line-height: 2.2rem;
+            color: $dark;
+        }
+    }
+
+    &__data {
+        font-size: 1.5rem;
+        padding: 1rem 0rem;
+        color: #9c9c9c;
+    }
+}

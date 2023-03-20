@@ -1,0 +1,206 @@
+@import 'variables';
+@import 'breakpoints';
+
+/*slider-block-review*/
+.section-review {
+    widtH: 100%;
+    height: 90rem;
+    padding-top: 2rem;
+    margin-bottom: 8rem;
+    background-color: $dark;
+}
+
+.section-review-block-title {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border-bottom: 1px solid silver;
+    padding: 1rem 0rem;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    a {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: underline;
+        margin-top: 2rem;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.block-review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.row .col {
+    background-color: $footer;
+    margin: 2rem;
+    padding: 1rem 2rem;
+}
+
+.revi {
+    width: 58rem;
+    height: 30rem;
+    background-color: $footer;
+    border-radius: 10px;
+    padding: 3rem 5rem;
+    margin: 1.6rem 0;
+
+    &-content {
+        .stars {
+            margin-top: -10rem;
+
+            img {
+                width: 1.7rem;
+                margin: 0.3rem;
+            }
+        }
+    }
+}
+
+.revi img {
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.revi span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.revi-text p {
+    margin-top: 2rem;
+}
+
+@media (max-width: 500px) {
+    .revi {
+        text-align: center;
+    }
+
+    .revi img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}
+
+.carousel {
+    padding-bottom: 5rem;
+}
+
+.carousel .carousel-indicators button {
+    padding: 0.1rem 0.1rem;
+    background-color: $white;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    margin-top: -2rem;
+    margin-right: 25rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 25rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.carousel-control-prev img {
+    position: relative;
+    margin-right: 25.2rem;
+    margin-top: -2rem;
+    width: 2rem;
+}
+
+.carousel-control-next img {
+    position: relative;
+    margin-left: 25.2rem;
+    margin-top: -2rem;
+    width: 2rem;
+}
+
+/*form-review*/
+.review {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    margin-top: 0rem;
+
+    &__title {
+        font-size: 2rem;
+        line-height: 0.5rem;
+    }
+
+    &__input {
+        width: 40rem;
+        padding: 2rem 2rem;
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+        color: $dark;
+        background-color: $white;
+        outline: none;
+        border: 1px solid transparent;
+        box-shadow: 0 0 3px grey;
+        transition: .2s;
+
+        &:focus {
+            width: 45rem;
+            border: 1px solid $dark;
+        }
+    }
+
+    &__textarea {
+        width: 40rem;
+        height: 15rem;
+        padding: 2rem 2rem;
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+        color: $dark;
+        background-color: $white;
+        outline: none;
+        border: 1px solid transparent;
+        box-shadow: 0 0 3px grey;
+        transition: .2s;
+
+        &:focus {
+            width: 45rem;
+            border: 1px solid $dark;
+        }
+    }
+
+    &__btn {
+        width: 40rem;
+        padding: 1.7rem 2rem;
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+        color: $white;
+        background-color: $purple;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            width: 45rem;
+            box-shadow: 0 0 12px $purple;
+        }
+    }
+}

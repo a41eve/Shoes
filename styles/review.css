@@ -1,0 +1,187 @@
+/*slider-block-review*/
+.section-review {
+  widtH: 100%;
+  height: 90rem;
+  padding-top: 2rem;
+  margin-bottom: 8rem;
+  background-color: #100A30;
+}
+
+.section-review-block-title {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 1px solid silver;
+  padding: 1rem 0rem;
+}
+.section-review-block-title h1 {
+  font-size: 2.5rem;
+}
+.section-review-block-title a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+.section-review-block-title a:hover {
+  color: #fff;
+}
+
+.block-review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.row .col {
+  background-color: #ededed;
+  margin: 2rem;
+  padding: 1rem 2rem;
+}
+
+.revi {
+  width: 58rem;
+  height: 30rem;
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 3rem 5rem;
+  margin: 1.6rem 0;
+}
+.revi-content .stars {
+  margin-top: -10rem;
+}
+.revi-content .stars img {
+  width: 1.7rem;
+  margin: 0.3rem;
+}
+
+.revi img {
+  display: flex;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.revi span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.revi-text p {
+  margin-top: 2rem;
+}
+
+@media (max-width: 500px) {
+  .revi {
+    text-align: center;
+  }
+  .revi img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+.carousel {
+  padding-bottom: 5rem;
+}
+
+.carousel .carousel-indicators button {
+  padding: 0.1rem 0.1rem;
+  background-color: #fff;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  margin-top: -2rem;
+  margin-right: 25rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  margin-top: -2rem;
+  margin-left: 25rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.carousel-control-prev img {
+  position: relative;
+  margin-right: 25.2rem;
+  margin-top: -2rem;
+  width: 2rem;
+}
+
+.carousel-control-next img {
+  position: relative;
+  margin-left: 25.2rem;
+  margin-top: -2rem;
+  width: 2rem;
+}
+
+/*form-review*/
+.review {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  margin-top: 0rem;
+}
+.review__title {
+  font-size: 2rem;
+  line-height: 0.5rem;
+}
+.review__input {
+  width: 40rem;
+  padding: 2rem 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #100A30;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0 0 3px grey;
+  transition: 0.2s;
+}
+.review__input:focus {
+  width: 45rem;
+  border: 1px solid #100A30;
+}
+.review__textarea {
+  width: 40rem;
+  height: 15rem;
+  padding: 2rem 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #100A30;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0 0 3px grey;
+  transition: 0.2s;
+}
+.review__textarea:focus {
+  width: 45rem;
+  border: 1px solid #100A30;
+}
+.review__btn {
+  width: 40rem;
+  padding: 1.7rem 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #624DE3;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.review__btn:hover {
+  width: 45rem;
+  box-shadow: 0 0 12px #624DE3;
+}/*# sourceMappingURL=review.css.map */

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*хлебные крошки*/
+.breadcrumb {
+  display: flex;
+  margin-top: 3rem;
+}
+.breadcrumb-item a {
+  color: #100A30;
+}
+.breadcrumb-item a:hover {
+  color: #624DE3;
+}
+
+/*content*/
+.block-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-color: #100A30;
+  color: #fff;
+  height: 54rem;
+}
+.block-information-content {
+  max-width: 50%;
+  text-align: center;
+}
+.block-information-content img {
+  max-width: 20rem;
+}
+.block-information-content h2 {
+  font-size: 4rem;
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+.block-information-content p {
+  line-height: 3.5rem;
+  font-size: 17px;
+}
+
+.block-items {
+  display: flex;
+  justify-content: center;
+}
+.block-items-contacts {
+  width: 100%;
+  align-items: center;
+  border-radius: 3rem;
+  margin-top: 3rem;
+}
+.block-items-contacts-text:first-child {
+  padding-top: 2rem;
+}
+.block-items-contacts-text {
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+  color: #000;
+  line-height: 3rem;
+  border-bottom: 1px solid #bfbfbf;
+}
+.block-items-contacts-text a {
+  color: #000;
+  text-decoration: underline;
+}
+.block-items-contacts-text a:hover {
+  color: #000;
+}
+.block-items-contacts-text:last-child {
+  border-bottom: 0px solid #c7ccd1;
+  padding-bottom: 1rem;
+}
+.block .block-map {
+  margin-top: 8rem;
+  margin-bottom: -5.6rem;
+}
+.block .block-map-text {
+  font-size: 20px;
+  border-left: 2px solid #100A30;
+  padding: 0rem 2rem;
+}
+.block .block-map iframe {
+  margin-top: 3rem;
+  width: 100%;
+}/*# sourceMappingURL=info.css.map */

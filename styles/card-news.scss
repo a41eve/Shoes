@@ -1,0 +1,112 @@
+@import 'variables';
+@import 'breakpoints';
+
+
+.section_card {
+    margin-top: 6rem;
+
+    &-news {
+
+        &-item {
+
+            &-title__inner {
+                border-bottom: 1px solid #c7ccd1;
+                padding-bottom: 0.5rem;
+
+                p {
+                    color: #444;
+                    font-style: italic;
+                }
+            }
+
+            &-block {
+                position: relative;
+                width: 100%;
+
+                &-illustration {
+                    &-img {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 80rem;
+                        margin-top: 3rem;
+                        filter: brightness(50%);
+                    }
+                }
+
+                &-text {
+                    position: absolute;
+                    top: 3%;
+                    left: 3%;
+
+                    h1 {
+                        font-weight: bold;
+                        font-size: 60px;
+                        color: $white;
+
+                    }
+
+                    h2 {
+                        font-size: 30px;
+                        margin-top: 3rem;
+                        color: $white;
+                    }
+                }
+
+                &-description {
+                    display: flex;
+                    justify-content: center;
+
+                    p {
+                        font-size: 19px;
+                        text-align: justify;
+                        color: #000;
+                        max-width: 80rem;
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+
+            &-arrow {
+                pointer-events: none;
+                display: flex;
+                justify-content: center;
+                padding: 5rem 0;
+
+                span {
+                    transform: translate3d(0, - 100%, 0);
+                    animation: span 2s infinite linear;
+
+                    ion-icon {
+                        font-size: 50px;
+                    }
+                }
+
+                @keyframes span {
+                    0% {
+                        transform: translate3d(0, -30%, 0);
+                    }
+
+                    50% {
+                        transform: translate3d(0, 30%, 0);
+                    }
+
+                    100% {
+                        transform: translate3d(0, -30%, 0);
+                    }
+                }
+            }
+
+            &-illustration-down {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    max-width: 58rem;
+                    border-radius: 3rem;
+                }
+            }
+        }
+    }
+}

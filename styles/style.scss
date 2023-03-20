@@ -1,0 +1,1141 @@
+@import 'variables';
+@import 'breakpoints';
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+.banner {
+    position: relative;
+    background-color: $dark;
+    color: $white;
+    padding-top: 62px;
+    height: 54rem;
+
+    @include breakpoint (very_small) {
+        padding-top: 62px;
+        height: 54rem;
+    }
+
+    &__title {
+        font-size: 5.5rem;
+        max-width: 570px;
+
+        @include breakpoint (very_small) {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__text {
+        letter-spacing: .18px;
+        max-width: 600px;
+
+        @include breakpoint (xll) {
+            text-align: center;
+            padding: 2rem 0;
+            line-height: 2.4rem;
+            margin: 0 auto;
+        }
+    }
+
+    img {
+        max-width: 40rem;
+        position: absolute;
+        z-index: 2;
+        top: 11rem;
+        left: 0rem;
+        right: -70rem;
+        bottom: 0;
+        margin: 0 auto;
+        transition: .2s;
+
+        @include breakpoint (very_small) {
+            position: absolute;
+            z-index: 0;
+            top: 37rem;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            width: 20rem;
+        }
+    }
+
+    .liquid {
+        position: absolute;
+        z-index: 1;
+        top: 38rem;
+        margin-left: 83rem;
+        width: 230px;
+        height: 230px;
+        background: transparent;
+        transition: .5s;
+
+        @include breakpoint (max) {
+            position: absolute;
+            z-index: 1;
+            top: 38rem;
+            right: 60rem;
+            width: 230px;
+            height: 230px;
+            background: transparent;
+            transition: .5s;
+        }
+    }
+
+    .liquid::after,
+    .liquid::before {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -75%);
+    }
+
+    .liquid::before {
+        border-radius: 45%;
+        background: rgba(255, 255, 255, 1);
+        animation: animate 5s linear infinite;
+    }
+
+    .liquid::after {
+        border-radius: 47%;
+        background: $dark;
+        animation: animate 10s linear infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: translate(-50%, -75%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -75%) rotate(360deg);
+        }
+    }
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    margin-top: 5.5rem;
+
+    @include breakpoint (very_small) {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    &__btn {
+        border-radius: .6rem;
+        margin-right: 2rem;
+        display: inline-block;
+        transition: .2s;
+
+        @include breakpoint (very_small) {
+            border-radius: .6rem;
+            margin-right: 2rem;
+            display: inline-block;
+        }
+
+        &-main {
+            padding: 1.5rem 2.5rem;
+            display: block;
+            justify-content: center;
+            text-decoration: none;
+            overflow: hidden;
+            border-radius: 1rem;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 0 0 20px $purple;
+            }
+
+            @include breakpoint (very_small) {
+                margin-left: 2rem;
+                padding: 0.4rem 2rem 0.4rem 2rem;
+                display: block;
+                text-decoration: none;
+                overflow: hidden;
+                border-radius: 0.7rem;
+            }
+
+            span {
+                position: relative;
+                color: #fff;
+                font-size: 1.6rem;
+                z-index: 1;
+
+                @include breakpoint (very_small) {
+                    position: relative;
+                    color: #fff;
+                    font-size: 1.4rem;
+                    z-index: 1;
+                }
+            }
+
+            .liquid-btn {
+                position: absolute;
+                z-index: 0;
+                top: -80px;
+                left: 0;
+                width: 200px;
+                height: 200px;
+                background: $purple;
+                transition: .5s;
+
+                @include breakpoint (very_small) {
+                    position: absolute;
+                    z-index: 0;
+                    top: -80px;
+                    left: 0;
+                    width: 200px;
+                    height: 200px;
+                    background: $purple;
+                    transition: .5s;
+                }
+            }
+
+            .liquid-btn::after,
+            .liquid-btn::before {
+                content: '';
+                width: 200%;
+                height: 200%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -75%);
+                background: $white;
+            }
+
+            .liquid-btn::before {
+                border-radius: 45%;
+                background: #8f7eee;
+                animation: anim 5s linear infinite;
+            }
+
+            .liquid-btn::after {
+                border-radius: 40%;
+                background: #392d7e;
+                animation: argba(255, 255, 255, 0.5)inite;
+                animation: animate 10s linear infinite;
+            }
+
+            &:hover .liquid-btn {
+                top: -120px;
+            }
+
+            @keyframes anim {
+                0% {
+                    transform: translate(-50%, -75%) rotate(0deg);
+                }
+
+                100% {
+                    transform: translate(-50%, -75%) rotate(360deg);
+                }
+            }
+        }
+
+        &-view {
+            text-align: center;
+            margin-left: 2rem;
+
+            &:hover {
+                color: $dark;
+                background-position: 0;
+            }
+
+            .bubbly-button {
+                display: inline-block;
+                font-size: 1.6rem;
+                padding: 1.7rem 2.5rem;
+                border-radius: 1rem;
+                -webkit-appearance: none;
+                appearance: none;
+                background-color: transparent;
+                border: 1px solid $white;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                transition: .2s ease-in-out;
+
+                @include breakpoint (very_small) {
+                    display: inline-block;
+                    font-size: 1.4rem;
+                    padding: 0.3rem 2rem;
+                    border-radius: .6rem;
+                    line-height: 2.4rem;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background-color: transparent;
+                    border: 1px solid $white;
+                    color: #fff;
+                    cursor: pointer;
+                    position: relative;
+                    transition: .2s ease-in-out;
+                }
+            }
+
+            .bubbly-button:hover {
+                outline: 0;
+            }
+
+            .bubbly-button:before,
+            .bubbly-button:after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 140%;
+                height: 100%;
+                left: -20%;
+                z-index: -1000;
+                transition: all ease-in-out 1s;
+                background-repeat: no-repeat;
+            }
+
+            .bubbly-button:before {
+                display: none;
+                top: -75%;
+                background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 20%, #fff 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #fff 15%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%);
+                background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+            }
+
+            .bubbly-button:after {
+                display: none;
+                bottom: -75%;
+                background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #fff 15%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%);
+                background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+            }
+
+            .bubbly-button:hover {
+                background-color: $white;
+                color: #000;
+            }
+
+            .bubbly-button.animate:before {
+                display: block;
+                animation: topBubbles ease-in-out 0.75s forwards;
+            }
+
+            .bubbly-button.animate:after {
+                display: block;
+                animation: bottomBubbles ease-in-out 0.75s forwards;
+            }
+
+            @keyframes topBubbles {
+                0% {
+                    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+                }
+
+                50% {
+                    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+                }
+
+                100% {
+                    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+                    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+                }
+            }
+
+            @keyframes bottomBubbles {
+                0% {
+                    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+                }
+
+                50% {
+                    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+                }
+
+                100% {
+                    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+                    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+                }
+            }
+        }
+    }
+}
+
+.section {
+    padding-top: 100px;
+
+    &__content-title {
+        max-width: 610px;
+        padding-left: 1rem;
+
+        @include breakpoint (very_small) {
+            max-width: 610px;
+            text-align: center;
+            font-size: 2rem;
+            color: #000;
+        }
+    }
+
+    @include breakpoint (very_small) {
+        padding-top: 5rem;
+    }
+}
+
+.tarif {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+    @include breakpoint (very_small) {
+        margin-top: 5rem;
+    }
+
+    &-item {
+        transition: .2s;
+        overflow: hidden;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        background-color: #000;
+        transition: .2s;
+
+        &:hover img {
+            transform: scale(1.1);
+            filter: blur(0px);
+        }
+
+        img {
+            width: 37rem;
+            height: 43rem;
+            transition: .2s;
+            filter: blur(3px);
+
+            @include breakpoint (very_small) {
+                height: 35rem;
+                width: 32rem;
+            }
+        }
+    }
+
+    &-info {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        &__title {
+            color: $white;
+            font-size: 2.4rem;
+            font-weight: 400;
+            padding: 1rem 4rem;
+            border: 1px solid $white;
+        }
+    }
+
+    &-footer {
+        border-radius: 0 0 .8rem .8rem;
+        padding: 2.4rem 3rem;
+    }
+
+    &-list {
+        list-style: none;
+        padding: 0;
+
+        &__item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 1.4rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                top: calc(50% - 1rem);
+                left: 0;
+
+            }
+        }
+    }
+}
+
+.kinds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+    @include breakpoint (very_small) {
+        margin-top: 5rem;
+    }
+
+    &-item {
+        transition: .2s;
+        overflow: hidden;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        background-color: #000;
+        transition: .2s;
+
+        &:hover img {
+            transform: scale(1.1);
+            filter: blur(0px);
+        }
+
+        img {
+            width: 37rem;
+            height: 43rem;
+            transition: .2s;
+            filter: blur(3px);
+
+            @include breakpoint (very_small) {
+                height: 35rem;
+                width: 32rem;
+            }
+        }
+    }
+
+    &-info {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        &__title {
+            color: $white;
+            font-size: 2.4rem;
+            font-weight: 400;
+            padding: 1rem 4rem;
+            border: 1px solid $white;
+        }
+    }
+}
+
+/*slider-collections*/
+.section-slider {
+    width: 100%;
+    height: 60rem;
+    background-color: $dark;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint (very_small) {
+        height: 68rem;
+    }
+}
+
+.block-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin: 8rem 0rem;
+
+    &-revi {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include breakpoint (very_small) {
+            display: block;
+        }
+
+        &-left {
+            max-width: 50rem;
+
+            @include breakpoint (very_small) {
+                padding: 0 1rem;
+            }
+
+            &-title {
+                font-size: 70px;
+                font-weight: bold;
+                color: #fff;
+
+                @include breakpoint (very_small) {
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                &-name {
+                    font-size: 35px;
+                    color: #fff;
+                    margin-top: 4rem;
+                    font-weight: bold;
+
+                    @include breakpoint (very_small) {
+                        font-size: 22px;
+                        color: #fff;
+                        margin-top: 2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &-text {
+                color: #fff;
+                margin-top: 2rem;
+
+                @include breakpoint (very_small) {
+                    color: #fff;
+                    margin-top: 2rem;
+                    font-size: 15px;
+                    max-width: 30rem;
+                }
+            }
+        }
+
+        &-right {
+            img {
+                width: 60rem;
+                margin-left: 10rem;
+
+                @include breakpoint (very_small) {
+                    width: 30rem;
+                    margin-left: 1rem;
+                    margin-top: 5rem;
+                }
+            }
+        }
+    }
+}
+
+/*slider*/
+.carousel {
+    padding-bottom: 5rem;
+}
+
+.carousel .carousel-indicators button {
+    padding: 0.1rem 0.1rem;
+    background-color: $white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+
+    @include breakpoint (very_small) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1%;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        background: none;
+        border: 0;
+        opacity: 0.5;
+        transition: opacity 0.15s ease;
+    }
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    margin-top: -2rem;
+    padding: 1.5rem 1.5rem;
+    margin-right: 25rem;
+    border-radius: 50%;
+    background-color: transparent;
+
+    @include breakpoint (very_small) {
+        position: absolute;
+        margin-top: -2rem;
+        padding: 1.5rem 1.5rem;
+        margin-right: 0rem;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    margin-top: -2rem;
+    padding: 1.5rem 1.5rem;
+    margin-left: 25rem;
+    border-radius: 50%;
+    background-color: transparent;
+
+    @include breakpoint (very_small) {
+        position: absolute;
+        margin-top: -2rem;
+        padding: 1.5rem 1.5rem;
+        margin-left: 0rem;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+}
+
+/*popular*/
+.section__popular {
+    display: flex;
+    align-items: center;
+
+    &-title {
+        padding-right: 2rem;
+
+        @include breakpoint (very_small) {
+            margin-left: 12rem;
+            font-size: 2rem;
+            color: #000;
+        }
+    }
+}
+
+/*Новинки*/
+.popular {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+
+    @include breakpoint (very_small) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+    }
+
+    &-item {
+        max-width: 280px;
+        height: 450px;
+        transition: .2s;
+
+        &:hover {
+            border: 0px solid $dark;
+        }
+
+        @include breakpoint (very_small) {
+            max-width: 200px;
+            height: 200px;
+            margin: 0 0.7rem 11rem 0.7rem;
+        }
+    }
+
+    &-header {
+        position: relative;
+
+        @include breakpoint (very_small) {
+            position: relative;
+        }
+    }
+
+    &__img {
+        width: 280px;
+
+        @include breakpoint (very_small) {
+            width: 140px;
+        }
+    }
+
+    &__text {
+        max-width: 280px;
+        padding: 1rem 1rem;
+        line-height: 2.2rem;
+        margin-bottom: 0rem;
+        color: $dark;
+
+        @include breakpoint (xxxxs) {
+            max-width: 140px;
+            padding: 1rem 1rem;
+            line-height: 2.2rem;
+            margin-bottom: 0rem;
+            color: $dark;
+            font-size: 12px;
+        }
+    }
+
+    &__price {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding: 0rem 1rem;
+        color: $dark;
+
+        @include breakpoint (xxxxs) {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 0rem 1rem;
+            color: $dark;
+        }
+    }
+}
+
+/*Новинки спорта*/
+.section__special {
+    display: flex;
+    align-items: center;
+    margin-top: -10rem;
+
+    @include breakpoint (very_small) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: -8rem;
+        padding-top: 5rem;
+    }
+
+    &-title {
+        padding-right: 2rem;
+
+        @include breakpoint (very_small) {
+            font-size: 2rem;
+            padding-right: 0rem;
+            color: #000;
+        }
+    }
+}
+
+.special {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+
+    @include breakpoint (very_small) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+    }
+
+    &-item {
+        max-width: 280px;
+        height: 520px;
+        transition: .2s;
+
+        &:hover {
+            border: 0px solid $dark;
+        }
+
+        @include breakpoint (very_small) {
+            max-width: 200px;
+            height: 200px;
+            margin: 0 0.7rem 12rem 0.7rem;
+        }
+    }
+
+    &-header {
+        position: relative;
+
+        @include breakpoint (very_small) {
+            position: relative;
+        }
+    }
+
+    &__img {
+        width: 280px;
+
+        @include breakpoint (very_small) {
+            width: 140px;
+        }
+    }
+
+    &__text {
+        max-width: 280px;
+        padding: 1rem 1rem;
+        line-height: 2.2rem;
+        margin-bottom: 0rem;
+        color: $dark;
+
+        @include breakpoint (very_small) {
+            max-width: 140px;
+            padding: 1rem 1rem;
+            line-height: 2.2rem;
+            margin-bottom: 0rem;
+            color: $dark;
+            font-size: 12px;
+        }
+    }
+
+    &__price {
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding: 0rem 1rem;
+        color: $dark;
+
+        @include breakpoint (very_small) {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 0rem 1rem;
+            color: $dark;
+        }
+    }
+}
+
+/*Бренды*/
+.brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+
+    @include breakpoint (very_small) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+    }
+
+    &__item {
+        text-align: center;
+        font-size: 3rem;
+        width: 100px;
+        color: $dark;
+        margin: 0 auto;
+
+        @include breakpoint (very_small) {
+            text-align: center;
+            font-size: 3rem;
+            width: 150px;
+            color: $dark;
+            margin: 0 auto;
+            margin: 2rem 0;
+        }
+
+        &-text {
+            color: $text-sm;
+            padding: 1rem 0rem 0rem 0rem;
+            font-size: 1.3rem;
+        }
+
+        &-img {
+            height: 50px;
+        }
+    }
+}
+
+.scale {
+    overflow: hidden;
+}
+
+.scale img {
+    transition: transform 0.25s;
+}
+
+.scale img:hover {
+    transform: scale(1.05);
+}
+
+/*Новости*/
+.section__news {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint (very_small) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: -5rem;
+    }
+
+    &-title {
+        padding-right: 2rem;
+
+        @include breakpoint (very_small) {
+            padding-right: 2rem;
+            font-size: 2rem;
+            color: #000;
+        }
+    }
+
+    /*button all news*/
+    &-button {
+        padding: 1rem 2rem;
+        display: block;
+        text-decoration: none;
+        overflow: hidden;
+        border-radius: 2rem;
+
+        span {
+            position: relative;
+            color: #fff;
+            font-size: 16px;
+            z-index: 1;
+        }
+
+        .liquid {
+            position: absolute;
+            top: -80px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background: #7b66fa;
+            transition: .5s;
+        }
+
+        .liquid::after,
+        .liquid::before {
+            content: '';
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            background: $white;
+        }
+
+        .liquid::before {
+            border-radius: 45%;
+            background: $purple;
+            animation: animate 5s linear infinite;
+        }
+
+        .liquid::after {
+
+            border-radius: 40%;
+            background: rgba(20, 20, 20, 0.5);
+            animation: animate 10s linear infinite;
+        }
+
+        &:hover .liquid {
+            top: -120px;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translate(-50%, -75%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -75%) rotate(360deg);
+            }
+        }
+    }
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    margin-bottom: 15rem;
+
+    @include breakpoint (very_small) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 6rem;
+    }
+
+    &-item {
+        max-width: 280px;
+        height: 450px;
+        transition: .2s;
+
+        &:hover {
+            border: 0px solid $dark;
+        }
+
+        @include breakpoint (very_small) {
+            max-width: 200px;
+            height: 240px;
+            margin: 0 0.7rem 10rem 0.7rem;
+        }
+    }
+
+    &-header {
+        position: relative;
+
+        @include breakpoint (very_small) {
+            position: relative;
+        }
+    }
+
+    &__img {
+        width: 280px;
+
+        @include breakpoint (very_small) {
+            width: 140px;
+        }
+    }
+
+    &__text {
+        max-width: 280px;
+        padding: 2rem 0rem 0rem 0rem;
+        line-height: 2.2rem;
+        margin-bottom: 0rem;
+        color: $dark;
+
+        @include breakpoint (very_small) {
+            max-width: 140px;
+            padding: 0.4rem 0rem 0rem 0rem;
+            line-height: 2.2rem;
+            margin-bottom: 0rem;
+            color: $dark;
+            font-size: 12px;
+        }
+    }
+
+    &__data {
+        font-size: 1.5rem;
+        padding: 1rem 0rem;
+        color: #9c9c9c;
+
+        @include breakpoint (very_small) {
+            position: absolute;
+            top: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 13px;
+            padding: 0.5rem 0rem;
+            color: grey;
+        }
+    }
+}

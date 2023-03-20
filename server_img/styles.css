@@ -1,0 +1,13 @@
+
+.container{
+    padding-top: 200px;
+}
+
+.server_messages, form{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.server_messages{
+    margin-top: 10px;
+}
