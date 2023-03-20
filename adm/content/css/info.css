@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #100A30;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  color: #555;
+  font-size: 15px;
+}
+
+::placeholder {
+  color: #555;
+  font-size: 15px;
+}
+
+.wrapper-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section__info-inner_block {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 93.7rem;
+  padding: 4rem 3rem 4rem 3rem;
+  border-radius: 2rem;
+}
+.section__info-inner_block-title {
+  font-size: 20px;
+}
+.section__info-inner_block-card {
+  border: 1px solid #bfbfbf;
+  padding: 4rem;
+  margin-top: 3rem;
+}
+.section__info-inner_block-card .slog {
+  font-weight: bold;
+}
+.section__info-inner_block-card .desk {
+  line-height: 3rem;
+  padding: 3rem 0;
+}
+.section__info-inner_block .header__img {
+  width: 20rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+.section__info-inner_block-form {
+  margin-top: 4rem;
+}
+.section__info-inner_block-form-title {
+  font-size: 18px;
+}
+.section__info-inner_block-form form {
+  margin-top: 2rem;
+}
+.section__info-inner_block-form-input input[type=file] {
+  width: 50rem;
+  border: none;
+  outline: none;
+  padding: 1.3rem 2.3rem;
+  border-radius: 1rem;
+  background-color: #624DE3;
+  border: 1px solid #100A30;
+  color: #fff;
+  margin: 1rem 0;
+  font-size: 17px;
+  transition: 0.2s ease-in-out;
+}
+.section__info-inner_block-form-input input[type=file]:focus {
+  box-shadow: 0 0 20px #bfbfbf;
+}
+.section__info-inner_block-form-input input {
+  width: 50rem;
+  border: none;
+  outline: none;
+  padding: 1.3rem 2.3rem;
+  border-radius: 1rem;
+  background-color: #ebebeb;
+  border: 1px solid #100A30;
+  margin: 1rem 0;
+  transition: 0.2s ease-in-out;
+}
+.section__info-inner_block-form-input input:focus {
+  box-shadow: 0 0 20px #bfbfbf;
+}
+.section__info-inner_block-form-input textarea {
+  min-height: 30rem;
+  width: 50rem;
+  border: none;
+  outline: none;
+  padding: 1.3rem 2.3rem;
+  border-radius: 1rem;
+  background-color: #ebebeb;
+  border: 1px solid #100A30;
+  margin: 1rem 0;
+  transition: 0.2s ease-in-out;
+}
+.section__info-inner_block-form-input textarea:focus {
+  box-shadow: 0 0 20px #bfbfbf;
+}
+.section__info-inner_block-form-btn {
+  margin-top: 2rem;
+}
+.section__info-inner_block-form-btn input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #624DE3;
+  color: #fff;
+  border-radius: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.section__info-inner_block-form-btn input:hover {
+  background-color: #100A30;
+}/*# sourceMappingURL=info.css.map */

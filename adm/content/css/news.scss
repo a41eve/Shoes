@@ -1,0 +1,327 @@
+@import 'variables';
+@import 'breakpoints';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #100A30;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+::placeholder {
+    color: #555;
+    font-size: 15px;
+}
+
+.wrapper-content {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.section_cart-inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_block {
+        overflow-y: auto;
+        max-width: 77rem;
+        max-height: 88rem;
+        padding: 0 2rem;
+        border-radius: 2rem;
+
+        &-title {
+            font-size: 20px;
+        }
+
+        &-filter {
+            display: flex;
+            margin-top: 1rem;
+
+            select {
+                border: none;
+                outline: none;
+                font-size: 15px;
+                background-color: #dedede;
+                padding: 0.5rem 2rem;
+                border-radius: 1rem;
+                margin-top: -0.2rem;
+
+                option {
+                    border: none;
+                    outline: none;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        &-out {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &-item2 {
+            width: 35rem;
+            position: relative;
+            background-color: #dedede;
+            border-radius: 2rem 0rem 2rem 2rem;
+            margin: 1rem 0;
+            margin-bottom: 2rem;
+            padding: 2rem 1rem;
+
+            &-delete {
+
+                img {
+                    position: absolute;
+                    top: 0.5rem;
+                    right: 0.5rem;
+                    width: 1.3rem;
+                }
+            }
+
+
+            &-all {
+                display: flex;
+
+                &-image {
+                    img {
+                        width: 10rem;
+                        margin-bottom: 1rem;
+                        border-radius: 1.5rem;
+                    }
+
+                    &-inner {
+                        display: flex;
+                        justify-content: space-between;
+
+                        img {
+                            width: 4.6rem;
+                            border-radius: 1rem;
+                        }
+                    }
+                }
+
+                &-text {
+                    margin-left: 2rem;
+                    position: relative;
+                    max-width: 25rem;
+                    font-size: 15px;
+
+                    &-title {
+                        font-size: 16px;
+                    }
+
+                    &-desc {
+                        font-size: 16px;
+                        line-height: 2.5rem;
+                    }
+
+                    &-data {
+                        font-size: 14px;
+                        color: #000;
+                        font-weight: bold;
+                    }
+
+                    /*link-to-update*/
+                    &-update {
+                        margin-top: 2rem;
+
+                        a {
+                            text-decoration: none;
+                            color: $white;
+
+                            background-color: $purple;
+                            padding: 0.5rem 1rem;
+                            border-radius: 1rem;
+
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+
+                        &-form {
+                            margin-top: 2rem;
+
+                            &-input {
+
+                                label {
+                                    color: #000;
+                                    font-size: 15px;
+                                }
+
+                                input[type="file"] {
+                                    width: 100%;
+                                    border: none;
+                                    outline: none;
+                                    font-size: 15px;
+                                    background-color: $purple;
+                                    padding: 1.5rem 2rem;
+                                    color: $white;
+                                    border-radius: 1rem;
+                                    transition: .2s ease-in-out;
+                                    margin-bottom: 2rem;
+                                }
+
+                                input {
+                                    width: 100%;
+                                    border: none;
+                                    outline: none;
+                                    font-size: 15px;
+                                    background-color: #dedede;
+                                    padding: 1.5rem 2rem;
+                                    border-radius: 1rem;
+                                    transition: .2s ease-in-out;
+                                    margin-bottom: 2rem;
+                                }
+
+                                textarea {
+                                    width: 100%;
+                                    min-height: 30rem;
+                                    border: none;
+                                    outline: none;
+                                    font-size: 15px;
+                                    background-color: #dedede;
+                                    padding: 1.5rem 2rem;
+                                    border-radius: 1rem;
+                                    transition: .2s ease-in-out;
+                                    margin-bottom: 2rem;
+
+                                }
+
+                                select {
+                                    width: 50rem;
+                                    border: none;
+                                    outline: none;
+                                    font-size: 15px;
+                                    background-color: #dedede;
+                                    padding: 1.5rem 2rem;
+                                    border-radius: 1rem;
+                                    transition: .2s ease-in-out;
+                                    margin-bottom: 2rem;
+                                }
+
+                                &-btn {
+
+                                    input {
+                                        color: #fff;
+                                        border: none;
+                                        outline: none;
+                                        background-color: #624DE3;
+                                        padding: 1rem 2rem;
+                                        border-radius: 1rem;
+                                        transition: .2s ease-in-out;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*form add*/
+    &_block-two {
+        margin-left: 10rem;
+        background-color: $dark;
+        border-radius: 2rem;
+        padding: 3rem 6rem;
+
+        &-upper-title {
+            color: $white;
+            font-size: 18px;
+        }
+
+        &-title {
+            color: $white;
+            font-size: 15px;
+            padding: 1rem 0 0.5rem 0;
+        }
+
+        &-forms {
+            display: flex;
+            justify-content: center;
+
+            &-form {
+                margin-top: 2rem;
+
+                &-input {
+
+                    label {
+                        color: $white;
+                        font-size: 15px;
+                    }
+
+                    input {
+                        width: 50rem;
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        background-color: $white;
+                        padding: 1.5rem 2rem;
+                        border-radius: 1rem;
+                        transition: .2s ease-in-out;
+                        margin-bottom: 2rem;
+                    }
+
+                    textarea {
+                        width: 50rem;
+                        min-height: 30rem;
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        background-color: $white;
+                        padding: 1.5rem 2rem;
+                        border-radius: 1rem;
+                        transition: .2s ease-in-out;
+                        margin-bottom: 2rem;
+                    }
+
+                    select {
+                        width: 50rem;
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        background-color: $white;
+                        padding: 1.5rem 2rem;
+                        border-radius: 1rem;
+                        transition: .2s ease-in-out;
+                        margin-bottom: 2rem;
+                    }
+
+                    &-btn {
+
+                        input {
+                            color: #fff;
+                            border: none;
+                            outline: none;
+                            background-color: #624DE3;
+                            padding: 1rem 2rem;
+                            border-radius: 1rem;
+                            transition: .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

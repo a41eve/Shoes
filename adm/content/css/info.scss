@@ -1,0 +1,162 @@
+@import 'variables';
+@import 'breakpoints';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #100A30;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+::placeholder {
+    color: #555;
+    font-size: 15px;
+}
+
+.wrapper-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.section__info-inner {
+
+    &_block {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        max-height: 93.7rem;
+        padding: 4rem 3rem 4rem 3rem;
+        border-radius: 2rem;
+
+        &-title {
+            font-size: 20px;
+        }
+
+        &-card {
+            border: 1px solid #bfbfbf;
+            padding: 4rem;
+            margin-top: 3rem;
+
+            .slog {
+                font-weight: bold;
+            }
+
+            .desk {
+                line-height: 3rem;
+                padding: 3rem 0;
+            }
+        }
+
+        .header__img {
+            width: 20rem;
+            height: 10rem;
+            margin-bottom: 2rem;
+        }
+
+        &-form {
+            margin-top: 4rem;
+
+            &-title {
+                font-size: 18px;
+            }
+
+            form {
+                margin-top: 2rem;
+            }
+
+            &-input {
+                input[type="file"] {
+                    width: 50rem;
+                    border: none;
+                    outline: none;
+                    padding: 1.3rem 2.3rem;
+                    border-radius: 1rem;
+                    background-color: $purple;
+                    border: 1px solid $dark;
+                    color: #fff;
+                    margin: 1rem 0;
+                    font-size: 17px;
+
+                    transition: .2s ease-in-out;
+
+                    &:focus {
+                        box-shadow: 0 0 20px #bfbfbf;
+                    }
+                }
+
+                input {
+                    width: 50rem;
+                    border: none;
+                    outline: none;
+                    padding: 1.3rem 2.3rem;
+                    border-radius: 1rem;
+                    background-color: #ebebeb;
+                    border: 1px solid $dark;
+                    margin: 1rem 0;
+
+                    transition: .2s ease-in-out;
+
+                    &:focus {
+                        box-shadow: 0 0 20px #bfbfbf;
+                    }
+                }
+
+                textarea {
+                    min-height: 30rem;
+                    width: 50rem;
+                    border: none;
+                    outline: none;
+                    padding: 1.3rem 2.3rem;
+                    border-radius: 1rem;
+                    background-color: #ebebeb;
+                    border: 1px solid $dark;
+                    margin: 1rem 0;
+
+                    transition: .2s ease-in-out;
+
+                    &:focus {
+                        box-shadow: 0 0 20px #bfbfbf;
+                    }
+                }
+            }
+
+            &-btn {
+                margin-top: 2rem;
+
+                input {
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 1rem 2rem;
+                    background-color: $purple;
+                    color: $white;
+                    border-radius: 1rem;
+
+                    transition: .2s ease-in-out;
+
+                    &:hover {
+                        background-color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,323 @@
+@import 'variables';
+@import 'breakpoints';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #100A30;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+::placeholder {
+    color: #555;
+}
+
+.wrapper-content {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.section_tovar-inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_block {
+        overflow-y: auto;
+        max-width: 77rem;
+        max-height: 90rem;
+        padding: 0 2rem;
+        border-radius: 2rem;
+
+        &-filter {
+            display: flex;
+            margin-top: 1rem;
+
+            select {
+                border: none;
+                outline: none;
+                font-size: 15px;
+                background-color: #dedede;
+                padding: 0.5rem 2rem;
+                border-radius: 1rem;
+
+                option {
+                    border: none;
+                    outline: none;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        &-item2 {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            background-color: #dedede;
+            border-radius: 2rem 0rem 2rem 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem 1rem;
+
+            &-delete {
+
+                img {
+                    position: absolute;
+                    top: 0.5rem;
+                    right: 0.5rem;
+                    width: 1.1rem;
+                }
+            }
+
+            &-text {
+                margin-left: 3rem;
+
+                &-block {
+                    width: 40rem;
+
+                    &-characteristic {
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+
+                        &-color {
+                            margin-left: 2rem;
+                        }
+
+                        &-size {
+                            margin-left: 2rem;
+                        }
+
+                        label {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            border-radius: 50%;
+                        }
+
+                        input {
+                            display: none;
+                        }
+                    }
+
+                    &-price-update {
+
+                        &-delete {
+                            margin-top: 1rem;
+
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+
+                                background-color: $purple;
+                                padding: 0.5rem 1rem;
+                                border-radius: 1rem;
+
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        &-text {
+                            display: flex;
+
+                            .price {
+                                font-weight: bold;
+                                font-size: 15px;
+                            }
+
+                            .country {
+                                font-weight: bold;
+                                font-size: 15px;
+                                margin-left: 2rem;
+                            }
+
+                            .category {
+                                margin-left: 2rem;
+                                font-weight: bold;
+                                font-size: 15px;
+                            }
+                        }
+
+                        /*link-to-update*/
+                        .update {
+                            margin-left: 2rem;
+
+                            a {
+                                text-decoration: none;
+                                color: $white;
+
+                                background-color: $purple;
+                                padding: 0.5rem 1rem;
+                                border-radius: 1rem;
+                            }
+
+                            /*all buttons&inputs in modal window*/
+                            .modal .modal-dialog .modal-content .modal-footer {
+                                input {
+                                    outline: none;
+                                    border: none;
+                                    background-color: $purple;
+                                    color: $white;
+                                    padding: 0.5rem 2rem;
+                                    border-radius: 1rem;
+                                }
+                            }
+
+                            .modal .modal-dialog .modal-content .modal-body {
+                                &-input {
+                                    input[type="file"] {
+                                        width: 100%;
+                                        border: none;
+                                        outline: none;
+                                        padding: 1.7rem 2rem;
+                                        margin: 1rem 0;
+                                        font-size: 16px;
+                                        color: #fff;
+                                        background-color: $purple;
+                                    }
+
+                                    input {
+                                        width: 100%;
+                                        border: none;
+                                        outline: none;
+                                        padding: 1.2rem 2rem;
+                                        margin: 1rem 0;
+                                        background-color: #ededed;
+                                    }
+
+                                    select {
+                                        width: 100%;
+                                        border: none;
+                                        outline: none;
+                                        padding: 1.2rem 2rem;
+                                        margin: 1rem 0;
+                                        background-color: #ededed;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-all {
+                max-width: 40rem;
+                margin-left: 2rem;
+            }
+
+            &-tovar__image {
+                img {
+                    width: 16rem;
+                    border-radius: 2rem;
+                }
+            }
+
+            &-text {
+                font-size: 15px;
+
+                a p {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+
+
+    /*form add*/
+    &_block-two {
+        margin-left: 10rem;
+        background-color: $dark;
+        border-radius: 2rem;
+        padding: 3rem 6rem;
+
+        &-upper-title {
+            color: $white;
+            font-size: 18px;
+        }
+
+        &-title {
+            color: $white;
+            font-size: 15px;
+            padding: 1rem 0 0.5rem 0;
+        }
+
+        &-forms {
+            display: flex;
+            justify-content: center;
+
+            &-form {
+                margin-top: 2rem;
+
+                &-input {
+
+                    label {
+                        color: $white;
+                        font-size: 15px;
+                    }
+
+                    input {
+                        width: 50rem;
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        background-color: $white;
+                        padding: 1rem 2rem;
+                        border-radius: 1rem;
+                        transition: .2s ease-in-out;
+                        margin-bottom: 2rem;
+
+                        &:focus {
+                            padding: 1.5rem 3rem;
+                        }
+                    }
+
+                    select {
+                        width: 50rem;
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        background-color: $white;
+                        padding: 1rem 2rem;
+                        border-radius: 1rem;
+                        transition: .2s ease-in-out;
+                        margin-bottom: 2rem;
+                    }
+
+                    &-btn {
+
+                        input {
+                            color: #fff;
+                            border: none;
+                            outline: none;
+                            background-color: #624DE3;
+                            padding: 0.7rem 2rem;
+                            border-radius: 1rem;
+                            transition: .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@mixin breakpoint($point) {
+    @if $point ==xxl {
+        @media (max-width: 1440px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xl {
+        @media (max-width: 1280px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xll {
+        @media (max-width: 1160px) {
+            @content;
+        }
+    }
+
+    @else if $point ==lg {
+        @media (max-width: 922px) {
+            @content;
+        }
+    }
+
+    @else if $point ==lg-min {
+        @media (max-width: 869px) {
+            @content;
+        }
+    }
+
+    @else if $point ==md-max {
+        @media (max-width: 829px) {
+            @content;
+        }
+    }
+
+    @else if $point ==md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point ==md_sp1 {
+        @media (max-width: 690px) {
+            @content;
+        }
+    }
+
+    @else if $point ==sm {
+        @media (max-width: 620px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xs {
+        @media (max-width: 565px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xss {
+        @media (max-width: 525px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xxs {
+        @media (max-width: 465px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xxxs {
+        @media (max-width: 446px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xxxxs {
+        @media (max-width: 400px) {
+            @content;
+        }
+    }
+
+    @else if $point ==penultimate {
+        @media (max-width: 346px) {
+            @content;
+        }
+    }
+
+    @else if $point ==small {
+        @media (max-width: 329px) {
+            @content;
+        }
+    }
+}

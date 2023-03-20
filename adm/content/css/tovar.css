@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #100A30;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  color: #555;
+}
+
+::placeholder {
+  color: #555;
+}
+
+.wrapper-content {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.section_tovar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  /*form add*/
+}
+.section_tovar-inner_block {
+  overflow-y: auto;
+  max-width: 77rem;
+  max-height: 90rem;
+  padding: 0 2rem;
+  border-radius: 2rem;
+}
+.section_tovar-inner_block-filter {
+  display: flex;
+  margin-top: 1rem;
+}
+.section_tovar-inner_block-filter select {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #dedede;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+.section_tovar-inner_block-filter select option {
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+.section_tovar-inner_block-item2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #dedede;
+  border-radius: 2rem 0rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+}
+.section_tovar-inner_block-item2-delete img {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1.1rem;
+}
+.section_tovar-inner_block-item2-text {
+  margin-left: 3rem;
+}
+.section_tovar-inner_block-item2-text-block {
+  width: 40rem;
+}
+.section_tovar-inner_block-item2-text-block-characteristic {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.section_tovar-inner_block-item2-text-block-characteristic-color {
+  margin-left: 2rem;
+}
+.section_tovar-inner_block-item2-text-block-characteristic-size {
+  margin-left: 2rem;
+}
+.section_tovar-inner_block-item2-text-block-characteristic label {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.section_tovar-inner_block-item2-text-block-characteristic input {
+  display: none;
+}
+.section_tovar-inner_block-item2-text-block-price-update {
+  /*link-to-update*/
+}
+.section_tovar-inner_block-item2-text-block-price-update-delete {
+  margin-top: 1rem;
+}
+.section_tovar-inner_block-item2-text-block-price-update-delete a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #624DE3;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.section_tovar-inner_block-item2-text-block-price-update-delete a:hover {
+  color: #fff;
+}
+.section_tovar-inner_block-item2-text-block-price-update-text {
+  display: flex;
+}
+.section_tovar-inner_block-item2-text-block-price-update-text .price {
+  font-weight: bold;
+  font-size: 15px;
+}
+.section_tovar-inner_block-item2-text-block-price-update-text .country {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 2rem;
+}
+.section_tovar-inner_block-item2-text-block-price-update-text .category {
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 15px;
+}
+.section_tovar-inner_block-item2-text-block-price-update .update {
+  margin-left: 2rem;
+  /*all buttons&inputs in modal window*/
+}
+.section_tovar-inner_block-item2-text-block-price-update .update a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #624DE3;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.section_tovar-inner_block-item2-text-block-price-update .update .modal .modal-dialog .modal-content .modal-footer input {
+  outline: none;
+  border: none;
+  background-color: #624DE3;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+.section_tovar-inner_block-item2-text-block-price-update .update .modal .modal-dialog .modal-content .modal-body-input input[type=file] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.7rem 2rem;
+  margin: 1rem 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #624DE3;
+}
+.section_tovar-inner_block-item2-text-block-price-update .update .modal .modal-dialog .modal-content .modal-body-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0;
+  background-color: #ededed;
+}
+.section_tovar-inner_block-item2-text-block-price-update .update .modal .modal-dialog .modal-content .modal-body-input select {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0;
+  background-color: #ededed;
+}
+.section_tovar-inner_block-item2-all {
+  max-width: 40rem;
+  margin-left: 2rem;
+}
+.section_tovar-inner_block-item2-tovar__image img {
+  width: 16rem;
+  border-radius: 2rem;
+}
+.section_tovar-inner_block-item2-text {
+  font-size: 15px;
+}
+.section_tovar-inner_block-item2-text a p {
+  margin-top: 2rem;
+}
+.section_tovar-inner_block-two {
+  margin-left: 10rem;
+  background-color: #100A30;
+  border-radius: 2rem;
+  padding: 3rem 6rem;
+}
+.section_tovar-inner_block-two-upper-title {
+  color: #fff;
+  font-size: 18px;
+}
+.section_tovar-inner_block-two-title {
+  color: #fff;
+  font-size: 15px;
+  padding: 1rem 0 0.5rem 0;
+}
+.section_tovar-inner_block-two-forms {
+  display: flex;
+  justify-content: center;
+}
+.section_tovar-inner_block-two-forms-form {
+  margin-top: 2rem;
+}
+.section_tovar-inner_block-two-forms-form-input label {
+  color: #fff;
+  font-size: 15px;
+}
+.section_tovar-inner_block-two-forms-form-input input {
+  width: 50rem;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2rem;
+}
+.section_tovar-inner_block-two-forms-form-input input:focus {
+  padding: 1.5rem 3rem;
+}
+.section_tovar-inner_block-two-forms-form-input select {
+  width: 50rem;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2rem;
+}
+.section_tovar-inner_block-two-forms-form-input-btn input {
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #624DE3;
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
+  transition: 0.2s ease-in-out;
+}/*# sourceMappingURL=tovar.css.map */

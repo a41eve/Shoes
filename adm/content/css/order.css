@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #100A30;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  color: #555;
+}
+
+::placeholder {
+  color: #555;
+}
+
+/*all buttons&inputs in modal window*/
+.modal .modal-dialog .modal-content .modal-footer input {
+  outline: none;
+  border: none;
+  background-color: #624DE3;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+
+/*wrapper - all*/
+.wrapper-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*section*/
+.section_order-inner {
+  display: flex;
+}
+.section_order-inner_block {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 93.7rem;
+  padding: 4rem 3rem 4rem 3rem;
+  border-radius: 2rem;
+}
+.section_order-inner_block-title {
+  font-size: 20px;
+}
+.section_order-inner_block-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px grey;
+  margin-top: 6rem;
+  padding: 1rem 6rem;
+  border-radius: 2rem;
+  /*order*/
+}
+.section_order-inner_block-item-action-delete {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.section_order-inner_block-item-action-delete a img {
+  width: 1.3rem;
+}
+.section_order-inner_block-item-action-edit {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+.section_order-inner_block-item-action-edit a img {
+  width: 1.5rem;
+}
+.section_order-inner_block-item-action-edit .modal .modal-dialog .modal-content .modal-body-input input[type=file] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.7rem 2rem;
+  margin: 1rem 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #624DE3;
+}
+.section_order-inner_block-item-action-edit .modal .modal-dialog .modal-content .modal-body-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0;
+  background-color: #ededed;
+}
+.section_order-inner_block-item-action-edit .modal .modal-dialog .modal-content .modal-body-input select {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0;
+  background-color: #ededed;
+}
+.section_order-inner_block-item-order {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section_order-inner_block-item-order-user {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid #bfbfbf;
+}
+.section_order-inner_block-item-order-user-img img {
+  width: 9rem;
+  border-radius: 50%;
+}
+.section_order-inner_block-item-order-user-text {
+  margin-left: 1rem;
+}
+.section_order-inner_block-item-order-user-text-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section_order-inner_block-item-order-user-text-top p {
+  margin: 0.5rem 2rem;
+}
+.section_order-inner_block-item-order-user-text-bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section_order-inner_block-item-order-user-text-bottom p {
+  margin: 0.5rem 2rem;
+}
+.section_order-inner_block-item-order-tovar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50rem;
+  margin-left: 1rem;
+  border-right: 2px solid #bfbfbf;
+}
+.section_order-inner_block-item-order-tovar-top {
+  display: flex;
+  /*modal-window-cart-product*/
+}
+.section_order-inner_block-item-order-tovar-top a {
+  color: #000;
+  margin: 0.5rem 2rem;
+  text-decoration: underline;
+}
+.section_order-inner_block-item-order-tovar-top a:hover {
+  color: #000;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item {
+  display: flex;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item-image img {
+  width: 40rem;
+  height: 45rem;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item-details {
+  margin-left: 2rem;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item-details .title {
+  font-weight: bold;
+  margin-bottom: -0.3rem;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item-details .article {
+  color: #555;
+  font-size: 14px;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item-details .price {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item-details .two-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.section_order-inner_block-item-order-tovar-top .modal .modal-dialog .modal-content .modal-body .card-tovar-item-details .color span {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 50%;
+}
+.section_order-inner_block-item-order-tovar-bottom {
+  display: flex;
+}
+.section_order-inner_block-item-order-tovar-bottom p {
+  margin: 0.5rem 2rem;
+}
+.section_order-inner_block-item-order-detail {
+  min-width: 20rem;
+  margin-left: 1rem;
+}
+.section_order-inner_block-item-order-detail-top {
+  display: flex;
+}
+.section_order-inner_block-item-order-detail-top p {
+  margin: 0.5rem 2rem;
+}
+.section_order-inner_block-item-order-detail-bottom {
+  display: flex;
+}
+.section_order-inner_block-item-order-detail-bottom p {
+  margin: 0.5rem 2rem;
+}
+.section_order-inner_block-item-order-detail-status {
+  display: flex;
+}
+.section_order-inner_block-item-order-detail-status p {
+  width: 100%;
+  margin: 0.5rem 2rem;
+  background-color: #624DE3;
+  padding: 0.2rem 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 2rem;
+}
+.section_order-inner_block-item-order-action-delete {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.section_order-inner_block-item-order-action-delete a img {
+  width: 1.3rem;
+}
+.section_order-inner_block-item-block-date {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -4.2rem;
+  right: 0;
+}
+.section_order-inner_block-item-block-date-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section_order-inner_block-item-block-date-line p b {
+  margin: 0 1.5rem;
+}
+.section_order-inner_block-item-block-date-line p img {
+  width: 3rem;
+}/*# sourceMappingURL=order.css.map */
